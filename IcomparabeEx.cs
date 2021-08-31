@@ -8,13 +8,13 @@ namespace IComparableDemo
     {
         public int RollNo { get; set; }
         public string Name { get; set; }
-        public int CompareTo(Student student)
+        public int CompareTo(Student std)
         {
-            if(this.RollNo==student.RollNo)
+            if(this.RollNo==std.RollNo)
             {
-                return this.Name.CompareTo(student.Name);
+                return this.Name.CompareTo(std.Name);
             }
-            return student.RollNo.CompareTo(this.RollNo);
+            return std.RollNo.CompareTo(this.RollNo);
         }
         public override string ToString()
         {
